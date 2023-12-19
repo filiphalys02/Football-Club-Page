@@ -1,5 +1,7 @@
 body { /* Ustawienie koloru tła i usunięcie marginesów */
-    background-color: rgb(34, 44, 103);
+    background: url(background3.jpg) no-repeat; /* dodanie zdjęcia w tle */
+    background-size: cover;
+    background-attachment: fixed;
     font-family: 'Helvetica', sans-serif;
     margin: 0;
 }
@@ -41,28 +43,30 @@ body { /* Ustawienie koloru tła i usunięcie marginesów */
     height: 50px;
     font-size: 20px;
     display: flex;
-    align-items: center; /* Wypośrodkowanie zawartości w pionie */
     justify-content: center; /* Wypośrdowkowanie elementów w poziomie */
 }
 
 .menu_bar a { /* Ustawienia każdego elementu w MENU */
     line-height: 50px;
-    height: 100%;
     font-size: 15px;
     display: inline-block;
     text-decoration: none;
-    text-transform: uppercase;
     text-align: center;
     color: #fff;
     cursor: pointer;
-    width: 120px;
+    width: 140px;
+    justify-content: center;
 }
+ i {
+    font-size: 30px; /* Rozmiar ikony */
+    transform: translateY(5px);
+ }
 
 .menu_bar a:hover { /* Ustawienia elementów MENU po najechaniu kursorem */
     background-color: rgb(117, 26, 29);
     border-radius: 10px;   
     color: rgb(219, 189, 40);
-    font-size: 17px;
+    font-size: 80%;
 }
 
 
