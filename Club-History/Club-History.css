@@ -58,6 +58,10 @@ body { /* Ustawienie koloru tła i usunięcie marginesów */
     width: 140px;
     justify-content: center;
 }
+ i {
+    font-size: 30px; /* Rozmiar ikony */
+    transform: translateY(5px);
+ }
 
 i {
     font-size: 30px; /* Rozmiar ikony */
