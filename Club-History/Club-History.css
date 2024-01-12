@@ -4,16 +4,6 @@ body { /* Ustawienie koloru tła i usunięcie marginesów */
     background-attachment: fixed;
     font-family: 'Helvetica', sans-serif;
     margin: 0;
-    justify-content: center; /* Wyśrodkowanie zawartości w poziomie */
-    align-items: center; /* Wyśrodkowanie zawartości w pionie */
-
-}
-
-#container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Odstęp między kafelkami */
-    justify-content: center; /* Centrowanie kafli w poziomie */
   }
   
 .naglowek, .menu_bar, footer { /* Ustawienia dla czerwonych pól*/
@@ -29,6 +19,7 @@ body { /* Ustawienie koloru tła i usunięcie marginesów */
     height: 100px;
     display: flex; 
     align-items: center;
+    justify-content: center; /* Dodanie wyśrodkowania kafli w poziomie */
 }
 
 .naglowek img { /* Ustawienia herbu w nagłówku */
@@ -67,7 +58,8 @@ body { /* Ustawienie koloru tła i usunięcie marginesów */
     width: 140px;
     justify-content: center;
 }
- i {
+
+i {
     font-size: 30px; /* Rozmiar ikony */
     transform: translateY(5px);
  }
@@ -79,7 +71,6 @@ body { /* Ustawienie koloru tła i usunięcie marginesów */
     font-size: 80%;
 }
 
-
 footer {
     text-align: center;
     padding-top: 10px;
@@ -90,6 +81,16 @@ footer {
 
 
 /* Prostokątne kafle z nawigacją do kolejnych stron*/
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Wyśrodkowanie kafli w poziomie */
+  align-items: center; /* Wyśrodkowanie kafli w pionie */
+  margin: 30px 10%;
+  text-align: center; /* Dodanie centrowania dla tekstu w kafelkach */
+}
+
 .rectangle-tile {
     width:450px;
     height: 225px;
@@ -102,6 +103,12 @@ footer {
     justify-content: center; /* Centrowanie kafli w poziomie */
   }
   
+  .rectangle-tile:hover  {
+    transform: scale(1.05); /* Powiększenie kafli o 5% */
+    transition: transform 0.4s ease; /* Dodanie płynnego przejścia */
+    box-shadow: 8px 10px 15px rgba(0, 0, 0, 0.3); /* Zmiana cienia */
+  }
+
   .rectangle-tile img {
     width: 100%;
     height: 100%;
@@ -112,16 +119,16 @@ footer {
     flex: 4.5;
     display: flex;
     margin: auto;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
-    margin-top: 35px;
-    color: rgb(219, 189, 40);
-    text-shadow: 5px 5px 5px black;
+    margin-top: 45px;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5), -1px -1px 1px rgba(0, 0, 0, 0.5), 1px -1px 1px rgba(0, 0, 0, 0.5), -1px 1px 1px rgba(0, 0, 0, 0.5); /* Użycie rgba dla cienia z przezroczystością */
     justify-content: center;
   }
   
   /* Dodatkowe style dla każdego prostokątnego kafelka */
-  #first-tile {
+  #first-tile  {
     background: url(historiaklubu.jpg) no-repeat;
     background-size: cover;
     box-shadow: 5px 7px 0px 0px #662020;

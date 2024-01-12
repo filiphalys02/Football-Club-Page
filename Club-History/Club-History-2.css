@@ -5,7 +5,6 @@ body { /* Ustawienie koloru tła i usunięcie marginesów */
     font-family: 'Helvetica', sans-serif;
     margin: 0;
 }
-
 .naglowek, .menu_bar, footer { /* Ustawienia dla czerwonych pól*/
     background-color: rgb(174, 64, 68);
     margin-top: 30px;
@@ -14,20 +13,17 @@ body { /* Ustawienie koloru tła i usunięcie marginesów */
     border-radius: 10px;
     box-shadow: 5px 5px 25px rgb(0, 0, 0);
 }
-
 .naglowek { /* Ustawienia nagłówka */
     height: 100px;
     display: flex; 
     align-items: center;
 }
-
 .naglowek img { /* Ustawienia herbu w nagłówku */
     margin: 20px;
     height: 80px;
     width: 80px;
     cursor: pointer;
 }
-
 .naglowek p { /* Ustawienia tekstu w nagłówku */
     flex: 4.5;
     display: flex;
@@ -38,14 +34,12 @@ body { /* Ustawienie koloru tła i usunięcie marginesów */
     text-shadow: 5px 5px 5px black;
     justify-content: center;
 }
-
 .menu_bar { /* Ustawienia paska MENU */
     height: 50px;
     font-size: 20px;
     display: flex;
     justify-content: center; /* Wypośrdowkowanie elementów w poziomie */
 }
-
 .menu_bar a { /* Ustawienia każdego elementu w MENU */
     line-height: 50px;
     font-size: 15px;
@@ -57,20 +51,54 @@ body { /* Ustawienie koloru tła i usunięcie marginesów */
     width: 140px;
     justify-content: center;
 }
- i {
+i {
     font-size: 30px; /* Rozmiar ikony */
     transform: translateY(5px);
  }
-
 .menu_bar a:hover { /* Ustawienia elementów MENU po najechaniu kursorem */
     background-color: rgb(117, 26, 29);
     border-radius: 10px;   
     color: rgb(219, 189, 40);
     font-size: 80%;
 }
-
 footer {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+
+/* historia klubu*/
+.h2 {
+    display: flex;
+    background-color: rgb(174, 64, 68);
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px rgb(0, 0, 0);
+}
+section{
+    display: flex;
+}
+section article {
+    background-color: rgb(174, 64, 68);
+    margin-top: 0px;
+    flex: 7;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px rgb(0, 0, 0);
+
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5), -1px -1px 1px rgba(0, 0, 0, 0.5), 1px -1px 1px rgba(0, 0, 0, 0.5), -1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+section article::first-letter {
+    font-size: 400%; /* Możesz dostosować wielkość pierwszej litery według własnych preferencji */
+    font-weight: bold; /* Opcjonalne: nadaj pogrubienie pierwszej litery */
+    color: rgb(255, 255, 255); /* Opcjonalne: nadaj kolor pierwszej literze */
+    float: left; /* Opcjonalne: użyj float, aby pierwsza litera wydobyła się poza resztę tekstu */
+    margin-right: 5px; /*lekki margines po prawej stronie od litery*/
+  }
