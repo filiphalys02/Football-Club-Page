@@ -1,5 +1,5 @@
 body { /* Ustawienie koloru tła i usunięcie marginesów */
-    background: url(background3.jpg) no-repeat; /* dodanie zdjęcia w tle */
+    background: url("../Main/background3.jpg") no-repeat; /* dodanie zdjęcia w tle */
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Helvetica', sans-serif;

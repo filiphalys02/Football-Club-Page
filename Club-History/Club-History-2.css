@@ -75,7 +75,7 @@ p1 {
     padding: 10px;
     margin-top: 30px;
     margin-left: 10%;
-    margin-right: 76%;
+    margin-right: 74%;
     border-radius: 10px;
     color:#fff;
     box-shadow: 5px 5px 25px rgb(0, 0, 0);
@@ -87,7 +87,6 @@ section{
 section article {
     background-color: rgb(174, 64, 68);
     margin-top: 0px;
-    flex: 7;
     margin-left: 10%;
     margin-right: 10%;
     padding: 10px;
