@@ -74,3 +74,80 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+
+
+
+
+/* Prostokątne kafle z nawigacją do kolejnych stron*/
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Wyśrodkowanie kafli w poziomie */
+    align-items: center; /* Wyśrodkowanie kafli w pionie */
+    margin: 30px 10%;
+    text-align: center; /* Dodanie centrowania dla tekstu w kafelkach */
+  }
+  
+  .rectangle-tile {
+      width:450px;
+      height: 225px;
+      border-radius: 20px; /*zaokrąglenie*/
+      overflow: hidden; 
+      position: relative;
+      display: inline-block;
+      margin: 20px;
+      transition: all ease .35s;
+      justify-content: center; /* Centrowanie kafli w poziomie */
+    }
+    
+    .rectangle-tile:hover  {
+      transform: scale(1.05); /* Powiększenie kafli o 5% */
+      transition: transform 0.4s ease; /* Dodanie płynnego przejścia */
+      box-shadow: 8px 10px 15px rgba(0, 0, 0, 0.3); /* Zmiana cienia */
+    }
+  
+    .rectangle-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .rectangle-tile p {
+      flex: 4.5;
+      display: flex;
+      margin: auto;
+      font-size: 40px;
+      font-weight: bold;
+      margin-top: 45px;
+      color: rgb(255, 255, 255);
+      text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5), -1px -1px 1px rgba(0, 0, 0, 0.5), 1px -1px 1px rgba(0, 0, 0, 0.5), -1px 1px 1px rgba(0, 0, 0, 0.5); /* Użycie rgba dla cienia z przezroczystością */
+      justify-content: center;
+    }
+    
+    /* Dodatkowe style dla każdego prostokątnego kafelka */
+    #first-tile  {
+      background: url(sekcja_kobiet.jpg) no-repeat;
+      background-size: cover;
+      box-shadow: 5px 7px 0px 0px #662020;
+    }
+    
+    #second-tile {
+      background: url(sekcja_futsal.avif) no-repeat;
+      background-size: cover;
+      box-shadow: 5px 7px 0px 0px #662020;
+    }
+    
+    #third-tile {
+      background: url(sekcja_koszykowka.webp) no-repeat;
+      background-size: cover;
+      box-shadow: 5px 7px 0px 0px #662020;
+    }
+    
+    #fourth-tile {
+        background: url(sekcja_reczna.jpg) no-repeat;
+        background-size: cover;
+        box-shadow: 5px 7px 0px 0px #662020;
+      }
+      
