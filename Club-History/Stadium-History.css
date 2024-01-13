@@ -74,3 +74,51 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+
+
+/* historia stadionu*/
+p1 {
+    display: flex;
+    background-color: rgb(174, 64, 68);
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 73%;
+    border-radius: 10px;
+    color:#fff;
+    box-shadow: 5px 5px 25px rgb(0, 0, 0);
+}
+
+section{
+    display: flex;
+}
+section article {
+    background-color: rgb(174, 64, 68);
+    margin-top: 0px;
+    flex: 7;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px rgb(0, 0, 0);
+
+    color: rgb(255, 255, 255);
+
+    box-shadow: 5px 7px 0px 0px #662020;
+}
+section article img {
+    width:45%;
+    display:flex;
+    height: 45%; /* Maintain the aspect ratio of the image */
+    border-radius: 10px; 
+    margin-bottom: 10px; 
+    margin-left: 25%;
+}
+section article .first-letter { /* większa pierwsza litera tekstu*/
+    font-size: 400%; 
+    font-weight: bold; 
+    color: rgb(255, 255, 255); 
+    float: left; 
+    margin-right: 5px; 
+  }

@@ -69,7 +69,7 @@ footer {
 
 
 /* historia klubu*/
-p {
+p1 {
     display: flex;
     background-color: rgb(174, 64, 68);
     padding: 10px;
@@ -107,9 +107,9 @@ section article img {
     margin-left: 25%;
 }
 section article .first-letter { /* większa pierwsza litera tekstu*/
-    font-size: 400%; /* Możesz dostosować wielkość pierwszej litery według własnych preferencji */
-    font-weight: bold; /* Opcjonalne: nadaj pogrubienie pierwszej litery */
-    color: rgb(255, 255, 255); /* Opcjonalne: nadaj kolor pierwszej literze */
-    float: left; /* Opcjonalne: użyj float, aby pierwsza litera wydobyła się poza resztę tekstu */
+    font-size: 400%; 
+    font-weight: bold; 
+    color: rgb(255, 255, 255); 
+    float: left; 
     margin-right: 5px; 
   }
