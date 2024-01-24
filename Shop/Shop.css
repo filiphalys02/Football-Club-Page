@@ -74,3 +74,97 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+
+
+#kontener {
+    background-color: rgb(174, 64, 68);
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px rgb(0, 0, 0);
+}
+#produkty {
+    display: flex;    
+}
+
+#a, #b, #c {
+    flex:1;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#produkt {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
+    transition: 0.3s;
+}
+#produkt:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#opis {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 2px 2px 3px black;
+    background-color: white;
+    color: black;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 10px;
+}
+
+#koszyk {
+    background-color:  rgb(219, 189, 40);
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px black;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+#koszyk:hover {
+    transform: scale(1.1);
+}
+
+#ilosc_a, #ilosc_b, #ilosc_c {
+    background-color:  rgb(219, 189, 40);
+    height: 40px;
+    box-shadow: 2px 2px 3px black;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+option {
+    text-align: center;
+}
+
+#info {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(219, 189, 40);
+    font-weight: bold;
+}
+
+#p1, #p2, #p3 {
+    padding-left: 8px;
+    padding-left: 8px;
+}
+#p2 {
+    scale: 1.5;
+}

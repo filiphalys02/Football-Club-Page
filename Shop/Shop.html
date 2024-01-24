@@ -47,7 +47,113 @@
             <span class="text">Wyloguj się</span>
         </a>
     </nav>
-    <h2>Shop</h2>
+    <div id="kontener">
+        <div id="info">
+            <p id="p1">W Twoim koszyku znajduje się aktualnie:</p>
+            <p id="p2">0<p>
+            <p id="p3">produktów</p>
+        </div>
+        <div id="produkty">
+            <div id="a">
+                <p id="opis">Strój domowy</p>
+                <img src="koszulka.jpg" id="produkt">
+                <br>
+                <select name="ik" id="ilosc_a">
+                    <option value="ik">Sztuk:</option>
+                    <option value="ik">1</option>
+                    <option value="ik">2</option>
+                    <option value="ik">3</option>
+                    <option value="ik">4</option>
+                    <option value="ik">5</option>
+                </select>
+                <button id="koszyk" onclick=zliczanie1()>Dodaj do koszyka</button>
+            </div>
+            <div id="b">
+                <p id="opis">Szalik klubowy</p>
+                <img src="szalik.jpg" id="produkt">
+                <br>
+                <select name="is" id="ilosc_b">
+                    <option value="is">Sztuk:</option>
+                    <option value="is">1</option>
+                    <option value="is">2</option>
+                    <option value="is">3</option>
+                    <option value="is">4</option>
+                    <option value="is">5</option>
+                </select>
+                <button id="koszyk" onclick=zliczanie2()>Dodaj do koszyka</button>
+            </div>
+            <div id="c">
+                <p id="opis">Otwieracz do piwa</p>
+                <img src="otwieracz.png" id="produkt">
+                <br>
+                <select name="io" id="ilosc_c">
+                    <option value="io">Sztuk:</option>
+                    <option value="io">1</option>
+                    <option value="io">2</option>
+                    <option value="io">3</option>
+                    <option value="io">4</option>
+                    <option value="io">5</option>
+                </select>
+                <button id="koszyk" onclick=zliczanie3()>Dodaj do koszyka</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var suma = 0;
+        function zliczanie3() {
+            var elementLiczby = document.getElementById("p2");
+            var aktualnaLiczba = parseInt(elementLiczby.innerText);
+
+            var selectElement = document.getElementById("ilosc_c");
+            var selectedOption = selectElement.options[selectElement.selectedIndex].text;
+
+            if (selectedOption == "Sztuk:")
+                alert("Musisz podać ilość produktów");
+            else {
+                suma = suma+ parseInt(selectedOption);
+
+                var element = document.getElementById("p2");
+            
+                element.innerText = suma;
+            }
+        }
+        function zliczanie2() {
+            var elementLiczby = document.getElementById("p2");
+            var aktualnaLiczba = parseInt(elementLiczby.innerText);
+
+            var selectElement = document.getElementById("ilosc_b");
+            var selectedOption = selectElement.options[selectElement.selectedIndex].text;
+
+            if (selectedOption == "Sztuk:")
+                alert("Musisz podać ilość produktów");
+            else {
+                suma = suma+ parseInt(selectedOption);
+
+                var element = document.getElementById("p2");
+            
+                element.innerText = suma;
+            }
+        }
+        function zliczanie1() {
+            var elementLiczby = document.getElementById("p2");
+            var aktualnaLiczba = parseInt(elementLiczby.innerText);
+
+            var selectElement = document.getElementById("ilosc_a");
+            var selectedOption = selectElement.options[selectElement.selectedIndex].text;
+
+            if (selectedOption == "Sztuk:")
+                alert("Musisz podać ilość produktów");
+            else {
+                suma = suma+ parseInt(selectedOption);
+
+                var element = document.getElementById("p2");
+            
+                element.innerText = suma;
+            }
+        }
+    </script>
+
     <footer>Copyright &copy 2023 FC Barcelona</footer>
 
 </body>
