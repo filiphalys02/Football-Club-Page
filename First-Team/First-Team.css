@@ -113,12 +113,12 @@ section article:nth-child(1) {
     flex: 7;
     margin-left: 10%;
     margin-right: -100px;
-    margin-bottom: 350px;
+    margin-bottom: 1350px;
 }
 section article:nth-child(2) {
     flex: 3;
-    margin-right: 20px;
-    margin-bottom: 350px;
+    margin-right: 10%;
+    margin-bottom: 2400px;
 }
 
 
@@ -141,18 +141,17 @@ div {
   }
   
 b {
-    display:block;
-    width:35%;
-    height: 43%; 
+    display:flex;
+    width: 220px;
+    height: 300px; 
     border-radius: 10px; 
     margin-bottom: 10px; 
     margin-left: 25%;
-
+    cursor: pointer;
 }
   
 b:hover+div {
     display: block;
-    transform: scale(1.05);
 }
 
 #tytul {
